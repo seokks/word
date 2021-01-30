@@ -15,6 +15,8 @@ function go1() {
 
 function dec(){
     for(var i=0; i<26; i++){
+        answer += i+1;
+        answer += ". ";
         for(var j=0;j<word.length;j++){
            if(word[j]==" "){
                answer += "&nbsp";
