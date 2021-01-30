@@ -5,10 +5,10 @@ function go1() {
     word = txt.value.split("");
     //answer += "A".charCodeAt(0);
     //alert(String.fromCharCode(65));
-    answer = "Answer is... <br /><br />";
+    answer = "Answer is... \n\n";
     temp = 0;
     dec();
-    blk = document.getElementById("result");
+    blk = document.getElementById("resul");
     blk.innerHTML = answer;
 }
 
@@ -19,7 +19,7 @@ function dec(){
         answer += ". ";
         for(var j=0;j<word.length;j++){
            if(word[j]==" "){
-               answer += "&nbsp";
+               answer += " ";
             }
             else{
                 temp = word[j].charCodeAt(0);
@@ -39,6 +39,11 @@ function dec(){
                 }   
             }
         }
-        answer += "<br />";
+        answer += "\n";
     }
+}
+
+function resize(obj) {
+    obj.style.height = "1px";
+    obj.style.height = (12+obj.scrollHeight)+"px";
 }

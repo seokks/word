@@ -11,9 +11,10 @@
   <body>
     <style>
       @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+      @import url("https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap");
     </style>
     <div id="in1">
-      <h1 class="centered">---- 높임말 반말 바꾸기! ----</h1>
+      <h1 class="centered"> 높임말 반말 변환 </h1>
     </div>
     <script>
       window.onload = function () {
@@ -41,23 +42,25 @@
     lines = txtBox.value.split("\n");
 
     // generate HTML version of text
-    resultString  = "<p>";
+    resultString  = "";
     for (var i = 0; i < lines.length; i++) {
-        resultString += lines[i] + "<br />";
+        resultString += lines[i] + "\n";
     }
-    resultString += "</p>";
+    resultString += "\n";
     value_check();
     // print out to page
-    blk   = document.getElementById("result");
+    blk   = document.getElementById("resul");
     blk.innerHTML = resultString;
 }
     </script>
     <div class="centered">
-      <br />
-      <input type="radio" name="lan" value="반->높" checked />반말 -> 높임말
-      <br />
-      <input type="radio" name="lan" value="높->만" />높임말 -> 반말 <br />
-      <br />
+      
+      <div id="check">
+        <input type="radio" name="lan" value="반->높" checked />반말 -> 높임말
+        <br />
+        <input type="radio" name="lan" value="높->만" />높임말 -> 반말 <br />
+        
+      </div>
 
       <p id="example">ex) 나는 노래를 좋아한다. 저는 운동을 좋아합니다.</p>
       <div id="ex_result">
@@ -72,7 +75,7 @@
         <textarea
           class="autosize"
           id="inputbox"
-          style="color: black; background-color: beige"
+          style="color: black; background-color: beige; resize: none;"
           onkeydown="resize(this)"
           onkeyup="resize(this)"
           name="tet"
@@ -83,14 +86,24 @@
       </div>
       <br />
       
-      <div>
+      <div id="check">
         높임말: <input type="text" name="highh" id="htxt"/>
         반말: <input type="text" name="loww" id="ltxt"/> <button id = "add"> 추가
     </div>
     <button id="show">단어 리스트 보기</button>
     <div><button id="trans">변환</button></div>
     <div id="dic"></div>
-    <div id="result"></div>
+    
+    <textarea 
+    name="resul" 
+    class="autosize" 
+    id="resul" 
+    style="color: black; background-color: beige; resize: none;"
+    onkeydown="resize(this)"
+    onkeyup="resize(this)"
+    name="tet"
+    wrap="virtual"></textarea>
+    
     </div>
   </body>
 </html>

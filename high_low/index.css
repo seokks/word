@@ -1,10 +1,9 @@
 #in1 {
-  background-color: khaki;
-  border-color: lightslategray;
-  border-style: dashed;
-  border-radius: 20px 60px 20px 60px;
+  font-family: "Jua", sans-serif;
 }
-
+#inin {
+  font-family: "Jua", sans-serif;
+}
 #example {
   font-size: 20px;
   font-family: "Jeju Gothic", sans-serif;
@@ -25,8 +24,96 @@ textarea.autosize {
 
 #dic {
   background-color: cornsilk;
+  font-family: "Jeju Gothic", sans-serif;
 }
-#result {
-  border-color: lightgray;
-  border-style: dotted;
+
+#check {
+  font-family: "Jua", sans-serif;
+  font-size: 19px;
+}
+#inputbox {
+  font-family: "Jeju Gothic", sans-serif;
+  border-color: cornsilk;
+  border-radius: 5px;
+  font-size: 17px;
+}
+#trans {
+  width: 100px;
+
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#add {
+  width: 50px;
+  float: right;
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 2px 0;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 5px;
+}
+#show {
+  width: 130px;
+
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 6px 0;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#resul {
+  font-family: "Jeju Gothic", sans-serif;
+  border-color: cornsilk;
+  border-radius: 5px;
+  font-size: 17px;
 }
