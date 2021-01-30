@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dcode.css" />
+    <script src="dcode.js"></script>
+
+    <title>카이사르 암호 암호화/복호화</title>
+  </head>
+  <body>
+    <style>
+      @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+    </style>
+    <script>
+      window.onload = function () {
+        document.getElementById("go1").onclick = go1;
+      };
+    </script>
+    <div id="in1">
+      <h1 class="centered">카이사르 암호 암호화/복호화</h1>
+    </div>
+
+    <div class="centered">
+      <p id="example">ex) I love cookie</p>
+
+      <div id="in2">
+        <textarea
+          class="autosize"
+          id="input"
+          style="color: black; background-color: beige"
+          onkeydown="resize(this)"
+          onkeyup="resize(this)"
+          name="tet"
+          wrap="virtual"
+        >
+I love cookie</textarea
+        >
+      </div>
+      <br />
+
+      <button id="go1">START</button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
