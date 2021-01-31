@@ -1,0 +1,52 @@
+.centered {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+textarea.autosize {
+  min-height: 150px;
+  min-width: 500px;
+}
+
+#go1,
+#go2 {
+  width: 100px;
+  float: right;
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 7px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+#in1 {
+  font-family: "Jua", sans-serif;
+}
+
+#expl {
+  font-size: 25px;
+  font-family: "Jua", sans-serif;
+}
+#check {
+  font-family: "Jua", sans-serif;
+  font-size: 19px;
+}
+#input,
+#resul {
+  font-family: "Jua", sans-serif;
+  font-size: 17px;
+}
