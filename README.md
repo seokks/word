@@ -2,7 +2,7 @@
 
 
 2021.01.28
-높임말, 반말 변환 프로그램
+높임말, 반말 변환 프로그램    
 https://jo-gunhee.github.io/website1/high_low/index.html
 
 개선점
@@ -12,16 +12,16 @@ https://jo-gunhee.github.io/website1/high_low/index.html
 
 
 2021.01.30
-카이사르 암호 프로그램
+카이사르 암호 프로그램   
 https://jo-gunhee.github.io/website1/dcode/dcodewebsite.html
 
 개선점
 1. 알파벳의 갯수인 26가지 경우의 수를 전부 다 보여준다. (불필요한 정보) 말이 되는 하나의 문장을 선택해서 보여주는 기능이 필요할듯
 
 2021.01.31
-선형암호 암호화/복호화 프로그램
-암호화: https://jo-gunhee.github.io/website1/dcode2/affine.html
-복호화: https://jo-gunhee.github.io/website1/dcode2/affine_dec.html
+선형암호 암호화/복호화 프로그램   
+암호화: https://jo-gunhee.github.io/website1/dcode2/affine.html   
+복호화: https://jo-gunhee.github.io/website1/dcode2/affine_dec.html   
 
 개선점
 1. 암호문을 복호화 하였을 경우 예상되는 정답을 간추려서 보여주는 기능도 추가했으면 좋을듯 싶다.(경우의 수가 너무 많으므로...)
