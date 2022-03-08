@@ -1,8 +1,7 @@
 # website1
 
 
-2021.01.28
-높임말, 반말 변환 프로그램    
+2021.01석 반말 변환 프로그램    
 https://jo-gunhee.github.io/website1/high_low/index.html
 
 개선점
