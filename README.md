@@ -1,7 +1,7 @@
 # website1
 
 
-2021.01석 반말 변환 프로그램    
+석 반말 변환 프로그램    
 https://seokks.github.io/word/high_low/index.html
 
 개선점
