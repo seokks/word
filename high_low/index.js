@@ -160,7 +160,7 @@ function low_high(){
 
 function high_low(){
     for(var i=0; i<lis.length;i++){
-        resultString = resultString.replace(lis[i][0],lis[i][1][2]);
+        resultString = resultString.replace(lis[i][0],lis[i][1],lis[i][2]);
     }
 }
 
