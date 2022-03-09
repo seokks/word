@@ -405,20 +405,20 @@ function value_check(){
         }
     }   
 }
-String.prototype.replace = function(org, dest) {
+String.prototype.replaceAll = function(org, dest) {
     return this.split(org).join(dest);
 }
 
 //  입니다 이다 이다 입니다 한다 한다 합니다 합니다
 function low_high(){
     for(var i=0; i<lis.length;i++){
-        resultString = resultString.replace(lis[i][1],lis[i][0]);
+        resultString = resultString.replaceAll(lis[i][1],lis[i][0]);
     }
 }
 
 function high_low(){
     for(var i=0; i<lis.length;i++){
-        resultString = resultString.replace(lis[i][0],lis[i][1]);
+        resultString = resultString.replaceAll(lis[i][0],lis[i][1]);
     }
 }
 
