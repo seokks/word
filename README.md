@@ -2,7 +2,7 @@
 
 
 2021.01석 반말 변환 프로그램    
-https://jo-gunhee.github.io/website1/high_low/index.html
+https://seokks.github.io/word/high_low/index.html
 
 개선점
 1. 나는, 저는 이 두단어의 인식 정확도 향상을 위한 알고리즘
