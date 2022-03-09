@@ -140,10 +140,8 @@ function value_check(){
             break        
         }else if(document.getElementsByName("lan")[1].checked == true){
             high_low();
-            break
-        }else if(document.getElementsByName("lan")[2].checked == true){
-            high_low();
             break;
+
         }
     }   
 }
@@ -160,7 +158,7 @@ function low_high(){
 
 function high_low(){
     for(var i=0; i<lis.length;i++){
-        resultString = resultString.replace(lis[i][0],lis[i][1],lis[i][2]);
+        resultString = resultString.replace(lis[i][0],lis[i][1]);
     }
 }
 
