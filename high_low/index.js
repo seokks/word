@@ -144,7 +144,7 @@ function value_check(){
         }
     }   
 }
-String.prototype.replaceAll = function(org, dest) {
+String.prototype.replace = function(org, dest) {
     return this.split(org).join(dest);
 }
 
