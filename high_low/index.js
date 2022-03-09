@@ -1,5 +1,5 @@
 var lis = [
-    ["저는" "님은", "나는"],
+    ["나는", "님은", "저는"],
     ["하였네요.", "했다."],
     ["보았네요.", "봤다."],
     ["쳤습니다.","쳤다."],
@@ -138,7 +138,7 @@ function value_check(){
         if (document.getElementsByName("lan")[0].checked == true) {
             low_high();
             break        
-        }else if(document.getElementsByName("lan")[1].checked == true){
+        }else if(document.getElementsByName("lan")[1,2].checked == true){
             high_low();
             break;
         }
@@ -157,7 +157,7 @@ function low_high(){
 
 function high_low(){
     for(var i=0; i<lis.length;i++){
-        resultString = resultString.replace(lis[i][0],lis[i][1]);
+        resultString = resultString.replace(lis[i][0],lis[i][1,2]);
     }
 }
 
