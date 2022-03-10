@@ -17,9 +17,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-textarea.autosize {
-  min-height: 150px;
-  min-width: 500px;
+textarea {
+  height: 300px;
+  width: 300px;
 }
 
 #dic {
@@ -38,6 +38,56 @@ textarea.autosize {
   font-size: 17px;
 }
 #trans {
+  width: 100px;
+
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#dell {
+  width: 100px;
+
+  background-color: #8f9ada;
+
+  border: none;
+
+  color: #fff;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  font-size: 15px;
+
+  margin: 4px;
+
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#copyy {
   width: 100px;
 
   background-color: #8f9ada;
