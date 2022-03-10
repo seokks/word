@@ -18,8 +18,10 @@
     </div>
     <script>
       window.onload = function () {
-        document.getElementById("add").onclick = atxt;      
+//        document.getElementById("add").onclick = atxt;      
         document.getElementById("trans").onclick = processText;
+		document.getElementById("dell").onclick = deltext;
+	    document.getElementById("copyy").onclick = copytext;
         document.getElementById("show").onclick = calllis;
       };
       function calllis(){
@@ -31,12 +33,19 @@
         showlis2 = document.getElementById("dic");
         showlis2.innerHTML = dicstr;
       }
-      function atxt(){
-        hightxt = document.getElementById("htxt").value;
-        lowtxt = document.getElementById("ltxt").value;
-        lis.push([hightxt,lowtxt]);
-        alert("높임말: "+ hightxt +"\n"+ "반말: " + lowtxt + "\n"+"추가하였습니다.");
+
+      function copytext(){
+        content = document.getElementById('resul');
+        content.select();
+        document.execCommand('copy');
       }
+		
+  //    function atxt(){
+  //      hightxt = document.getElementById("htxt").value;
+  //      lowtxt = document.getElementById("ltxt").value;
+  //      lis.push([hightxt,lowtxt]);
+  //      alert("높임말: "+ hightxt +"\n"+ "반말: " + lowtxt + "\n"+"추가하였습니다.");
+  //    }
       function processText() {
     txtBox = document.getElementById("inputbox");
     lines = txtBox.value.split("\n");
@@ -52,6 +61,11 @@
     blk   = document.getElementById("resul");
     blk.innerHTML = resultString;
 }
+		
+		      function deltext(){
+    location.reload(true);
+      }
+		
     </script>
     <div class="centered">
       
@@ -67,39 +81,32 @@
       </div>
     </span>
 
-      <div id="in2">
+      <span id="in2">
         <textarea
-          class="autosize"
           id="inputbox"
           style="color: black; background-color: beige; resize: none;"
-          onkeydown="resize(this)"
-          onkeyup="resize(this)"
           name="tet"
           wrap="virtual"
         >
 </textarea
         >
-      </div>
-      <br />
-      
-      <div id="check">
-        높임말: <input type="text" name="highh" id="htxt"/>
-        반말: <input type="text" name="loww" id="ltxt"/> <button id = "add"> 추가
-    </div>
-    <button id="show">단어 리스트 보기</button>
-    <div><button id="trans">변환</button></div>
-    <div><button id="copyy">복사</button></div>
-    <div id="dic"></div>
-    
-    <textarea 
+		  
+		      <textarea 
     name="resul" 
-    class="autosize" 
     id="resul" 
     style="color: black; background-color: beige; resize: none;"
-    onkeydown="resize(this)"
-    onkeyup="resize(this)"
     name="tet"
     wrap="virtual"></textarea>
+      </span>
+      
+      <div id="check">
+    </div>
+    <span><button id="trans">변환</button></span>
+    <span><button id="copyy">복사</button></span>
+    <span><button id="dell">삭제</button></span>
+    <div id="dic"></div>
+    
+
     
     </div>
   </body>
