@@ -21,7 +21,7 @@
 //        document.getElementById("add").onclick = atxt;      
         document.getElementById("trans").onclick = processText;
 		document.getElementById("dell").onclick = deltext;
-	    document.getElementById("copyy").onclick = copytext;
+//	    document.getElementById("copyy").onclick = copytext;
         document.getElementById("show").onclick = calllis;
       };
       function calllis(){
@@ -32,12 +32,6 @@
         }
         showlis2 = document.getElementById("dic");
         showlis2.innerHTML = dicstr;
-      }
-
-      function copytext(){
-        content = document.getElementById('resul');
-        content.select();
-        document.execCommand('copy');
       }
 		
   //    function atxt(){
@@ -55,11 +49,13 @@
     for (var i = 0; i < lines.length; i++) {
         resultString += lines[i] + "\n";
     }
-    resultString += "\n";
     value_check();
     // print out to page
     blk   = document.getElementById("resul");
     blk.innerHTML = resultString;
+	 content = document.getElementById('resul');
+    content.select();
+        document.execCommand('copy');
 }
 		
 		      function deltext(){
@@ -102,7 +98,7 @@
       <div id="check">
     </div>
     <span><button id="trans">변환</button></span>
-    <span><button id="copyy">복사</button></span>
+//    <span><button id="copyy">복사</button></span>
     <span><button id="dell">삭제</button></span>
     <div id="dic"></div>
     
