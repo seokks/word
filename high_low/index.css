@@ -18,7 +18,7 @@
   margin-right: auto;
 }
 textarea {
-  height: 300px;
+  height: 150px;
   width: 300px;
 }
 
@@ -35,7 +35,7 @@ textarea {
   font-family: "Jeju Gothic", sans-serif;
   border-color: cornsilk;
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 12px;
 }
 #trans {
   width: 100px;
@@ -165,5 +165,5 @@ textarea {
   font-family: "Jeju Gothic", sans-serif;
   border-color: cornsilk;
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 12px;
 }
