@@ -22,11 +22,32 @@ textarea {
   width: 300px;
 }
 
-#dic {
-  background-color: cornsilk;
-  font-family: "Jeju Gothic", sans-serif;
+div#dic {
+    width:840px;
+    height:317px;
+    overflow:hidden;     /* if you don't want a scrollbar, set to hidden */
+    overflow-x:hidden;   /* hides horizontal scrollbar on newer browsers */
+
+    /* resize and min-height are optional, allows user to resize viewable area */
+    -webkit-resize:vertical; 
+    -moz-resize:vertical;
+    resize:vertical;
+    min-height:317px;
 }
 
+iframe#embed
+{
+    width:1000px;       /* set this to approximate width of entire page you're embedding */
+    height:1000px;      /* determines where the bottom of the page cuts off */
+    margin-left:-200px; /* clipping left side of page */
+    margin-top:-440px;  /* clipping top of page */
+    overflow:hidden;
+
+    /* resize seems to inherit in at least Firefox */
+    -webkit-resize:none;
+    -moz-resize:none;
+    resize:none;
+}
 #check {
   font-family: "Jua", sans-serif;
   font-size: 19px;
