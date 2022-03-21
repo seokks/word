@@ -35,8 +35,7 @@ div#dic {
     min-height:317px;
 }
 
-iframe#embed
-{
+iframe#embed {
     width:1000px;       /* set this to approximate width of entire page you're embedding */
     height:1000px;      /* determines where the bottom of the page cuts off */
     margin-left:-200px; /* clipping left side of page */
