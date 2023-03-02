@@ -653,3 +653,14 @@ function resize(obj) {
     obj.style.height = 12 + obj.scrollHeight + "px";
 }
 
+function removeEmptyLines() {
+  const inputTextArea = document.getElementById("inputTextArea");
+  const inputText = inputTextArea.value;
+
+  const nonEmptyLines = inputText
+    .split("\n")
+    .filter(line => line.trim() !== "");
+
+  const outputText = nonEmptyLines.join("\n");
+  inputTextArea.value = outputText;
+}
