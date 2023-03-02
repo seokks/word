@@ -19,6 +19,7 @@
 //        document.getElementById("add").onclick = atxt;      
         document.getElementById("trans").onclick = processText;
 		document.getElementById("dell").onclick = deltext;
+	      document.getElementById("dell2").onclick = deltext;
         document.getElementById("show").onclick = calllis;
       };
       function calllis(){
@@ -100,7 +101,7 @@
     <div id="dic">
       <textarea id="inputTextArea"></textarea>
       <button onclick="removeEmptyLines()">줄없애기</button>
-	    <button onclick="deltext()">비우기</button>
+	    <button id="dell2">비우기</button>
     </div>
     
 
