@@ -61,6 +61,13 @@
     document.getElementById("inputTextArea").value='';
       }
 	    
+function copyText() {
+  const inputTextArea = document.getElementById("inputTextArea");
+  inputTextArea.select();
+  document.execCommand("copy");
+}
+
+	    
     </script>
     <div class="centered">
       
@@ -101,9 +108,8 @@
     <div id="dic">
       <textarea id="inputTextArea"></textarea>
       <button onclick="removeEmptyLines()">줄없애기</button>
-      <button onclick="copyText(inputTextArea)">복사</button>
+	    <button onclick="copyText()">복사하기</button>
 	
-
     </div>
     
 
