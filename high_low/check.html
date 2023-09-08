@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Checker</title>
+</head>
+<body>
+    <h1>Duplicate Checker</h1>
+    <label for="textInput">Enter text to check for duplicates:</label>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button onclick="checkForDuplicate()">Check Duplicate</button>
+    <p id="result"></p>
+
+    <script>
+        // Define an array of values to check for duplicates
+        const valuesToCheck = [
+            "value1",
+            "value2",
+            "value3",
+            // Add more values as needed
+        ];
+
+        function checkForDuplicate() {
+            const inputText = document.getElementById("textInput").value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+
+            let isDuplicate = false;
+            for (const value of valuesToCheck) {
+                const normalizedValue = value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+                if (inputText === normalizedValue) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            const resultElement = document.getElementById("result");
+            if (isDuplicate) {
+                resultElement.textContent = "Duplicate found.";
+            } else {
+                resultElement.textContent = "No duplicate found.";
+            }
+        }
+    </script>
+</body>
+</html>
