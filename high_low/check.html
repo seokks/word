@@ -14,7 +14,7 @@
 
     <script>
         // Define an array of values to check for duplicates
-        const valuesToCheck = [
+        let valuesToCheck = [
             "value1",
             "value2",
             "value3",
@@ -24,20 +24,13 @@
         function checkForDuplicate() {
             const inputText = document.getElementById("textInput").value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
 
-            let isDuplicate = false;
-            for (const value of valuesToCheck) {
-                const normalizedValue = value.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
-                if (inputText === normalizedValue) {
-                    isDuplicate = true;
-                    break;
-                }
-            }
-
-            const resultElement = document.getElementById("result");
-            if (isDuplicate) {
+            if (valuesToCheck.includes(inputText)) {
+                const resultElement = document.getElementById("result");
                 resultElement.textContent = "Duplicate found.";
             } else {
-                resultElement.textContent = "No duplicate found.";
+                valuesToCheck.push(inputText);
+                const resultElement = document.getElementById("result");
+                resultElement.textContent = "No duplicate found. Text added.";
             }
         }
     </script>
